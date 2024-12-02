@@ -1,0 +1,671 @@
+.header {
+    background-image: url(../img/fondo\ head.png);
+    background-size: cover; /* Ajusta la imagen para que cubra el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 50px 0; /* Ajusta el espaciado superior e inferior */
+    color: #ffffff; /* Color del texto para contraste */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.TituloCarrusel {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+
+}
+.slider-box {
+    width: 1280px; /* Ancho del contenedor del carrusel */
+    margin: 70px auto 0;
+    overflow: hidden; /* Esconde el contenido que sobrepasa el contenedor */
+    position: relative;
+}
+
+.slider-box ul {
+    display: flex; /* Coloca los elementos en línea horizontal */
+    padding: 0;
+    margin: 0;
+    width: calc(100% * 5); /* Ajusta el ancho en base al número de elementos */
+    animation: slide 25s linear infinite; /* Ajusta la duración para que el movimiento sea continuo */
+}
+
+.slider-box li {
+    width: 100%; /* Ajusta al 20% para cada uno de los 5 elementos */
+    list-style: none;
+}
+
+.slider-box img {
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 20px;
+    top: 250px;
+    color: #fff;
+}
+
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+/* Corrección de la animación */
+@keyframes slide {
+    0% { transform: translateX(0); } /* Comienza en la primera imagen */
+    100% { transform: translateX(-80%); } /* Se desplaza a la última imagen en un movimiento continuo */
+}
+
+@media (max-width: 991px) {
+    .slider-box {
+        width: 100%;
+    }
+    .texto {
+        top: 50px;
+        padding: 0;
+    }
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 10px 20px;
+}
+/*PAGINA CONTACTO*/
+/* Isolate all styles with .contact-page */
+.contact-page {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #0b2b44;
+}
+
+/* Reset margin and padding for all elements within .contact-page */
+.contact-page * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the container and its content */
+.contact-page .container {
+    width: 10%;
+    margin: 50px auto;
+}
+
+.contact-page .container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-page .container p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.contact-page .contact-box {
+    background: #ffffff;
+    display: flex;
+    border-radius: 20px;
+}
+
+.contact-page .container-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-page .container-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background: hsl(207, 95%, 55%);
+    color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.contact-page .container-left h3, .contact-page .container-right h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-page .input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-page .input-group {
+    flex-basis: 48%;
+    margin-bottom: 25px;
+}
+
+.contact-page input, .contact-page textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #e4e4e4;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-page button {
+    display: inline-block;
+    width: 100%;
+    background: hsl(207, 95%, 55%);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 14px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page button:hover {
+    background-color: hsl(207, 80%, 45%);
+}
+
+.contact-page .container-right table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contact-page .container-right table td {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.contact-page .map iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+iframe {
+    width: 100%; /* Ajusta el ancho del iframe al 90% del contenedor */
+    height: 450px; /* Establece una altura fija */
+    border: none; /* Elimina cualquier borde que pueda tener */
+}
+
+
+.navbar-logo h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces */
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de servicios */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1em;
+    color: #666;
+}
+/*/* El contenedor general para la sección */
+.wrapper {
+    max-width: 1000px; /* Limita el ancho de la sección */
+    margin: 0 auto; /* Centra el contenido */
+    overflow: hidden;
+}
+
+/* Estilo para el título de la sección */
+.section-title h1 {
+    text-align: center;
+    color: #002865;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.section-title hr.separate {
+    border: none;
+    border-top: 2px solid #B7F2FF;
+    width: 60px;
+    margin: 10px auto;
+}
+
+/* Diseño de cuadrícula para mostrar los doctores */
+.grid-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0 20px 120px 20px;
+}
+
+/* Estilos para las imágenes de los doctores */
+.grid-team__img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el nombre de cada doctor */
+.grid-team__title {
+    color: #002865;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Estilos para el subtítulo (especialidad médica) */
+.grid-team__subtitle {
+    color: #9B9B9B;
+    font-size: 15px;
+    letter-spacing: 1.6px;
+}
+
+/* Estilos para cada bloque individual del equipo médico */
+.grid-team__doc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Opcional: diferentes estilos para secciones contenedoras */
+.container--v1 {
+    background-color: #F1F5FC;
+    padding: 50px 0 50px 0;
+}
+
+.container--v2 {
+    background-color: #0066FFD9;
+    padding: 50px 0 50px 0;
+}
+
+.container--v3{
+    background-color: #002865;
+    padding: 20px 0 20px 0;
+    border-top: 6px solid #B7F2FF;
+}
+*/
+/* Pie de página */
+footer {
+    padding: 20px;
+    background-color: #000000;
+    color: rgb(24, 19, 19);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: row; /* Mantiene los enlaces en horizontal en pantallas pequeñas */
+        gap: 10px; /* Ajusta el espacio entre los enlaces en pantallas pequeñas */
+    }
+}
+
+/* Ajusta el tamaño de todas las imágenes con la clase 'general' */
+.general {
+    width: 100%; /* Ajusta al 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 600px; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+    display: block; /* Asegura que las imágenes no tengan espacio debajo */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.options button {
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.options .blue { border-color: #007bff; }
+.options .orange { border-color: #ffa500; }
+.options .red { border-color: #ff3c00; }
+.options .green { border-color: #28a745; }
+
+
+.options button span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.options button i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+}
+ 
+/*               intranet                   
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bodylogin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F4F3;
+}
+
+.container-login {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.container-form-login {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-form-login form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in;
+}
+
+.container-form-login h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social-networks-login {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.social-networks-login ion-icon {
+    border: 1px solid #C9CCCB;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.container-form-login span {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.container-input-login {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #EEEEEE;
+}
+
+.container-input-login input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.container-form-login a {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.button-login {
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3AB397;
+    color: white;
+}
+
+/* Animations */
+.sign-up-login {
+    transform: translateX(-100%);
+}
+
+.container-login.toggle .sign-in-login {
+    transform: translateX(100%);
+}
+
+.container-login.toggle .sign-up-login {
+    transform: translateX(0);
+}
+
+/* Welcome */
+.container-welcome-login {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: #3AB997;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 50% 0 0 50%;
+}
+
+.container-login.toggle .container-welcome-login {
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color: #3AA8AD;
+}
+
+.container-welcome-login .welcome-login {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.welcome-sign-in-login {
+    transform: translateX(100%);
+}
+
+.container-welcome-login h3 {
+    font-size: 40px;
+}
+
+.container-welcome-login p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-welcome-login .button-login {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.container-login.toggle .welcome-sign-in-login {
+    transform: translateX(0);
+}
+
+.container-login.toggle .welcome-sign-up-login {
+    transform: translateX(-100%);
+}
+
+/*Stylo de Nosotros.php*/
+/* Estilos para la sección de Nosotros */
+#nosotros {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Sección de "Nosotros" */
+/* Estilos para la sección de Nosotros */
+#nosotros {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#nosotros .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#nosotros h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilos para los cuadros de información dentro de "Nosotros" */
+.info-nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-cuadro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-cuadro h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.info-cuadro p, .info-cuadro ul {
+    font-size: 1em;
+    color: #666;
+}
+
+.info-cuadro ul {
+    padding-left: 20px;
+}
+
+.info-cuadro ul li {
+    list-style: disc;
+}
+

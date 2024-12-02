@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Clínica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1>Mi Clínica</h1>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="Index-usuario.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Servicios-usuarios.html">Servicios</a></li>
+            <li><a href="Contacto-usuario.html">Contacto</a></li>
+            <li><a href="Intranet.html">Intranet</a></li>
+        </ul>
+    </nav>
+    
+
+    
+    <!-- Sección de Formulario de Contacto -->
+  <!-- Sección de Formulario de Contacto -->
+<section class="contact-page">
+    <div class="container">
+        <h1>Ponerse en Contacto</h1>
+        <p>Completa el formulario para ponerte en contacto con nosotros.</p>
+
+        <div class="contact-box">
+            <div class="container-left">
+                <h3>Completa el Formulario*</h3>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Nombre*</label>
+                            <input type="text" id="name" placeholder="Ingresa tu Nombre" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Teléfono*</label>
+                            <input type="text" id="phone" placeholder="+51 123456789" required>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email*</label>
+                            <input type="email" id="email" placeholder="tucorreo@gmail.com" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Asunto</label>
+                            <input type="text" id="subject" placeholder="Consulta">
+                        </div>
+                    </div>
+
+                    <label>Mensaje*</label>
+                    <textarea rows="10" id="message" placeholder="Escribe tu Mensaje" required></textarea>
+                    <button type="submit">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+
+            <div class="container-right">
+                <h3>Contáctanos</h3>
+                <table>
+                    <tr>
+                        <td>Email: </td>
+                        <td>contacto@miclinica.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teléfono: </td>
+                        <td>+51 935 417 822</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dirección: </td>
+                        <td>Mi Clínica <br>
+                            Calle falasia 123, puerta de pro <br>
+                            Lima - Perú</td>
+                    </tr>
+                </table>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.814262790181!2d-77.07317192927518!3d-11.955227514263454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce27c3ffffff%3A0xe167e46df1e75a12!2sUniversidad%20C%C3%A9sar%20Vallejo!5e1!3m2!1ses-419!2spe!4v1725867651332!5m2!1ses-419!2spe" 
+                        width="800" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Mi Clínica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
